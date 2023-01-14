@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  iNitnem
 //
-//  Created by Manrav Singh Khosa on 2023-01-12.
+//  Created by Manrav Singh Khosa
 //
 
 import SwiftUI
