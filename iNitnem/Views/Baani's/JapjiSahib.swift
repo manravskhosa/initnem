@@ -13,8 +13,8 @@ struct JapjiSahib: View {
     }
 }
 
-struct JapjiSahib_Previews: PreviewProvider {
+struct JapjiSahibPreview: PreviewProvider {
     static var previews: some View {
-        JapjiSahib()
+        Jaap_Sahib()
     }
 }

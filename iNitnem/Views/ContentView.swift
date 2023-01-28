@@ -1,7 +1,6 @@
 //
 //  ContentView.swift
 //  iNitnem
-//
 //  Created by Manrav Singh Khosa
 //
 
@@ -14,8 +13,6 @@ struct ContentView: View {
         NavigationView{
             ZStack{
 
-                
-                
                 VStack {
                     Text("Welcome, Ji 🙏🏼")
                         .fontWeight(.heavy)
@@ -36,7 +33,7 @@ struct ContentView: View {
                             .fontDesign(.serif)
                     }
                     
-                    NavigationLink(destination: NitnemBaniList()){
+                    NavigationLink(destination: MoreBaaniList()){
                         Text( "More Baani's     ")
                             .fontWeight(.heavy)
                             .font(.system(size:30))
