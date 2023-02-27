@@ -11,8 +11,9 @@ struct ContentView: View {
     var body: some View {
                 
         NavigationView{
-            ZStack{
 
+            ZStack{
+                
                 VStack {
                     Text("Welcome, Ji 🙏🏼")
                         .fontWeight(.heavy)
