@@ -10,13 +10,7 @@ import SwiftUI
 struct ToolMenu: View {
     var body: some View {
 
-        NavigationLink(destination: SahajPaatCalculator()){
-            Text( "ਸਹਿਜ ਪਾਠ      Ang Calculator")
-                .fontWeight(.heavy)
-                .font(.system(size:35))
-                .foregroundColor(Color.black)
-                .padding(.bottom)
-        }
+        Text("Implementation IP")
 
     }
 }

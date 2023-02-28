@@ -13,7 +13,7 @@ struct NitnemBaniList: View {
 
         VStack {
             NavigationLink(destination: JapjiSahib()){
-                Text( "Japji Sahib")
+                Text( "ਜਪੁਜੀ ਸਾਹਿਬ")
                     .fontWeight(.heavy)
                     .font(.system(size:35))
                     .foregroundColor(Color.black)
@@ -22,7 +22,7 @@ struct NitnemBaniList: View {
             
             
             NavigationLink(destination: Jaap_Sahib()){
-                Text( "Jaap Sahib")
+                Text( "ਜਾਪ ਸਾਹਿਬ")
                     .fontWeight(.heavy)
                     .font(.system(size:35))
                     .foregroundColor(Color.black)
@@ -30,7 +30,7 @@ struct NitnemBaniList: View {
             }
             
             NavigationLink(destination: Tav_Prasad_Savaiye()){
-                Text( "Tav Prasad Savaiye")
+                Text( "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ")
                     .fontWeight(.heavy)
                     .font(.system(size:35))
                     .foregroundColor(Color.black)
@@ -38,7 +38,7 @@ struct NitnemBaniList: View {
             }
             
             NavigationLink(destination: Chaupai_Sahib()){
-                Text( "Chaupai Sahib")
+                Text( "ਚੌਪਈ ਸਾਹਿਬ")
                     .fontWeight(.heavy)
                     .font(.system(size:35))
                     .foregroundColor(Color.black)
@@ -46,7 +46,7 @@ struct NitnemBaniList: View {
             }
             
             NavigationLink(destination: Anand_Sahib()){
-                Text( "Anand Sahib")
+                Text( "ਅਨੰਦ ਸਾਹਿਬ")
                     .fontWeight(.heavy)
                     .font(.system(size:35))
                     .foregroundColor(Color.black)
@@ -54,7 +54,7 @@ struct NitnemBaniList: View {
             }
             
             NavigationLink(destination: Rehras_Sahib()){
-                Text( "Rehras Sahib")
+                Text( "ਰਹਿਰਾਸ ਸਾਹਿਬ")
                     .fontWeight(.heavy)
                     .font(.system(size:35))
                     .foregroundColor(Color.black)
@@ -62,7 +62,7 @@ struct NitnemBaniList: View {
             }
             
             NavigationLink(destination: Kirtan_Sohila()){
-                Text( "Kirtan Sohila")
+                Text( "ਕੀਰਤਨ ਸੋਹਿਲਾ")
                     .fontWeight(.heavy)
                     .font(.system(size:35))
                     .foregroundColor(Color.black)

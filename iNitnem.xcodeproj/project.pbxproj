@@ -15,7 +15,6 @@
 		8A05292F29714EAB00E8A939 /* Anand Sahib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05292E29714EAB00E8A939 /* Anand Sahib.swift */; };
 		8A05293129714EB700E8A939 /* Rehras Sahib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05293029714EB700E8A939 /* Rehras Sahib.swift */; };
 		8A05293329714EC100E8A939 /* Kirtan Sohila.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05293229714EC100E8A939 /* Kirtan Sohila.swift */; };
-		8A052935297156E400E8A939 /* MoreBaaniList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A052934297156E400E8A939 /* MoreBaaniList.swift */; };
 		8AA91545297022D700FD5AF5 /* iNitnemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA91544297022D700FD5AF5 /* iNitnemApp.swift */; };
 		8AA91547297022D700FD5AF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA91546297022D700FD5AF5 /* ContentView.swift */; };
 		8AA91549297022D700FD5AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AA91548297022D700FD5AF5 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		8AA91560297022D800FD5AF5 /* iNitnemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA9155F297022D800FD5AF5 /* iNitnemUITests.swift */; };
 		8AA91562297022D800FD5AF5 /* iNitnemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA91561297022D800FD5AF5 /* iNitnemUITestsLaunchTests.swift */; };
 		8AC24948297026E200A4B81D /* NitnemBaniList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC24947297026E200A4B81D /* NitnemBaniList.swift */; };
-		8AC2494D2970331100A4B81D /* SahajPaatCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2494C2970331100A4B81D /* SahajPaatCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +51,6 @@
 		8A05292E29714EAB00E8A939 /* Anand Sahib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anand Sahib.swift"; sourceTree = "<group>"; };
 		8A05293029714EB700E8A939 /* Rehras Sahib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rehras Sahib.swift"; sourceTree = "<group>"; };
 		8A05293229714EC100E8A939 /* Kirtan Sohila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kirtan Sohila.swift"; sourceTree = "<group>"; };
-		8A052934297156E400E8A939 /* MoreBaaniList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreBaaniList.swift; sourceTree = "<group>"; };
 		8AA91541297022D700FD5AF5 /* iNitnem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNitnem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA91544297022D700FD5AF5 /* iNitnemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNitnemApp.swift; sourceTree = "<group>"; };
 		8AA91546297022D700FD5AF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		8AA9155F297022D800FD5AF5 /* iNitnemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNitnemUITests.swift; sourceTree = "<group>"; };
 		8AA91561297022D800FD5AF5 /* iNitnemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNitnemUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8AC24947297026E200A4B81D /* NitnemBaniList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitnemBaniList.swift; sourceTree = "<group>"; };
-		8AC2494C2970331100A4B81D /* SahajPaatCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahajPaatCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +101,6 @@
 				8A05293229714EC100E8A939 /* Kirtan Sohila.swift */,
 			);
 			path = "Baani's";
-			sourceTree = "<group>";
-		};
-		8A05292729714E4500E8A939 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				8AC2494C2970331100A4B81D /* SahajPaatCalculator.swift */,
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		8AA91538297022D700FD5AF5 = {
@@ -175,10 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				8AA91546297022D700FD5AF5 /* ContentView.swift */,
-				8A052934297156E400E8A939 /* MoreBaaniList.swift */,
 				8A05292229714E0700E8A939 /* ToolMenu.swift */,
 				8AC24947297026E200A4B81D /* NitnemBaniList.swift */,
-				8A05292729714E4500E8A939 /* Tools */,
 				8A05292629714E3400E8A939 /* Baani's */,
 			);
 			path = Views;
@@ -318,11 +304,9 @@
 				8A05292D29714E9E00E8A939 /* Chaupai Sahib.swift in Sources */,
 				8AA91545297022D700FD5AF5 /* iNitnemApp.swift in Sources */,
 				8A05292F29714EAB00E8A939 /* Anand Sahib.swift in Sources */,
-				8A052935297156E400E8A939 /* MoreBaaniList.swift in Sources */,
 				8A05292529714E1F00E8A939 /* JapjiSahib.swift in Sources */,
 				8A05292B29714E8D00E8A939 /* Tav Prasad Savaiye.swift in Sources */,
 				8AC24948297026E200A4B81D /* NitnemBaniList.swift in Sources */,
-				8AC2494D2970331100A4B81D /* SahajPaatCalculator.swift in Sources */,
 				8A05293129714EB700E8A939 /* Rehras Sahib.swift in Sources */,
 				8A05292929714E6600E8A939 /* Jaap Sahib.swift in Sources */,
 				8A05292329714E0700E8A939 /* ToolMenu.swift in Sources */,

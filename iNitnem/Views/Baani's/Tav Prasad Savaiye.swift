@@ -91,7 +91,7 @@ struct Tav_Prasad_Savaiye: View {
                 
                 VStack{
                     
-                    Text("ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸ੍ਵੈਯੇ ")
+                    Text("ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ ")
                         .font(.title)
                         .fontWeight(.heavy)
                     
