@@ -10,7 +10,9 @@ import SwiftUI
 struct ToolMenu: View {
     var body: some View {
 
-        Text("Implementation IP")
+        Text("Coming Soon")
+            .font(.largeTitle)
+            .fontWeight(.black)
 
     }
 }

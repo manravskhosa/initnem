@@ -7,6 +7,13 @@
 import SwiftUI
 import UIKit
 
+struct dailyFact {
+    let assetName: String
+    let text: String
+}
+
+let dailyFacts = [dailyFact(assetName: "Maharaja-Ranjit-Singh-Ji", text: "Maharaja Ranjit Singh was also known as Sher-e-Punjab (Lion of Punjab) for his unmatched bravery, leadership, and military prowess."), dailyFact(assetName:"BabaBudhaJi", text: "Baba Buddha Ji was the first head granthi of Harmandir Sahib and played an enormous role in the construction of Gurduwaras across Punjab in the 1600s"),dailyFact(assetName:"BhaiKanaiyaJi", text: "Bhai Kanhaiya Ji served water to wounded soldiers from both sides during the Battle of Anandpur Sahib in 1704"),dailyFact(assetName:"BhaiTaruSinghJi", text: "Bhai Taru Singh Ji refused to convert to Islam and had his scalp cut off by Mughal officials in 1745"),dailyFact(assetName:"HariSinghNalwa", text: "Hari Singh Nalwa's fearless leadership was crucial to the establishment of the Sikh Empire"),dailyFact(assetName:"JallianwalaBaag", text: "In 1919, British soldiers opened fire on unarmed Sikhs peacefully protesting British laws in Amritsar's Jallianwala Bagh"),dailyFact(assetName:"MaiBhagoJi", text: "Mai Bhago Ji's fearless leadership in the Battle of Muktsar lead Sikhs to victory"),dailyFact(assetName:"WWISinghs", text: "Despite racism in the British Army, Sikh soldiers bravery and fighting skills were recognized and respected by allies and enemies alike in WWI")]
+
 struct ContentView: View {
     @State private var showAlert = false
 
@@ -74,23 +81,29 @@ struct ContentView: View {
                         .fontWeight(.heavy)
                         .fontDesign(.serif
                         )
-                        .padding(.top, 50)
+                        .padding(.top)
                     
-                    Image("Maharaja-Ranjit-Singh-Ji")
-                        .resizable()
-                        .frame(width: 170, height: 170)
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(15)
+                    let randomIndex = Calendar.current.ordinality(of: .day, in: .year, for: Date())! % dailyFacts.count
                     
-                    Text("Maharaja Ranjit Singh was also known as Sher-e-Punjab (Lion of Punjab) for his unmatched bravery, leadership, and military prowess.")
+                    let todaysFact = dailyFacts[randomIndex]
+                    
+                    GeometryReader { geometry in
+                        Image(todaysFact.assetName)
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(15)
+                            .frame(width: geometry.size.width * 0.8, height: geometry.size.height * 0.8)
+                            .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+                    }
+                    
+                    Text(todaysFact.text)
                         .font(.subheadline)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 60)
+                        .padding(.bottom, 3)
                         .fontDesign(.serif
                         )
-                    
-
                 }
             }
         }
