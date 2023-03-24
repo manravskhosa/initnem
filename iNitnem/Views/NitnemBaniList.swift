@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct NitnemBaniList: View {
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         
         VStack {
-            Text("ਨਿਤਨੇਮ ਬਾਨੀ")
-                .fontWeight(.heavy)
-                .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 390 ? 33 : 50))
-                .foregroundColor(Color.black)
-                .padding(.trailing, UIScreen.main.bounds.width < 390 ? 190 : 140)
 
             VStack{
-                
+        
                 NavigationLink(destination: JapjiSahib()){
                     Text("ਜਪੁਜੀ ਸਾਹਿਬ")
+                        .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 414 ? 32 : 42))
+                        .foregroundColor(Color.black)
+                        .padding(.bottom)
+                        .padding(.top)
+                        .padding(.horizontal, 70)
+                }
+                
+                NavigationLink(destination: Jaap_Sahib()){
+                    Text("ਜਾਪ ਸਾਹਿਬ")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
                         .foregroundColor(Color.black)
                         .padding(.bottom)
                         .padding(.top)
@@ -34,8 +40,8 @@ struct NitnemBaniList: View {
                 
                 NavigationLink(destination: Tav_Prasad_Savaiye()){
                     Text( "ਤ੍ਵ ਪ੍ਰਸਾਦਿ ਸਵੱਯੇ")
+                        .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 414 ? 32 : 42))
                         .foregroundColor(Color.black)
                         .padding(.bottom)
                         .padding(.top)
@@ -44,8 +50,8 @@ struct NitnemBaniList: View {
                 
                 NavigationLink(destination: Chaupai_Sahib()){
                     Text( "ਚੌਪਈ ਸਾਹਿਬ")
+                        .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 414 ? 32 : 42))
                         .foregroundColor(Color.black)
                         .padding(.bottom)
                         .padding(.top)
@@ -54,8 +60,8 @@ struct NitnemBaniList: View {
                 
                 NavigationLink(destination: Anand_Sahib()){
                     Text( "ਅਨੰਦ ਸਾਹਿਬ")
+                        .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 414 ? 32 : 42))
                         .foregroundColor(Color.black)
                         .padding(.bottom)
                         .padding(.top)
@@ -64,8 +70,8 @@ struct NitnemBaniList: View {
                 
                 NavigationLink(destination: Rehras_Sahib()){
                     Text( "ਰਹਿਰਾਸ ਸਾਹਿਬ")
+                        .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 414 ? 32 : 42))
                         .foregroundColor(Color.black)
                         .padding(.bottom)
                         .padding(.top)
@@ -74,8 +80,8 @@ struct NitnemBaniList: View {
                 
                 NavigationLink(destination: Kirtan_Sohila()){
                     Text( "ਕੀਰਤਨ ਸੋਹਿਲਾ")
+                        .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .font(.system(size: UIDevice.current.userInterfaceIdiom == .phone && UIScreen.main.bounds.width < 414 ? 32 : 42))
                         .foregroundColor(Color.black)
                         .padding(.bottom)
                         .padding(.top)
@@ -84,17 +90,29 @@ struct NitnemBaniList: View {
                 
                 Image("Flower")
                     .resizable()
-                    .frame(width: 70, height: 70)
+                    .frame(width: 100, height: 100)
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(15)
             }
-            // Add a border around the VStack
-            .padding()
-            .background(Color.white)
-            .overlay(
-                RoundedRectangle(cornerRadius: 1)
-                    .stroke(Color(red: 40/255, green: 10/255, blue: 255/255), lineWidth: 10)
-            )
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        HStack {
+                            Image(systemName: "chevron.backward")
+                                .foregroundColor(.black)
+                            Text("ਨਿਤਨੇਮ ਬਾਨੀ")
+                                .font(.title)
+                                .fontWeight(.heavy)
+                                .foregroundColor(.black)
+                        }
+                    })
+                }
+            }
+            
         }
     }
     

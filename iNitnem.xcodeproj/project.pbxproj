@@ -46,7 +46,7 @@
 		8A05292229714E0700E8A939 /* ToolMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolMenu.swift; sourceTree = "<group>"; };
 		8A05292429714E1F00E8A939 /* JapjiSahib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapjiSahib.swift; sourceTree = "<group>"; };
 		8A05292829714E6600E8A939 /* Jaap Sahib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Jaap Sahib.swift"; sourceTree = "<group>"; };
-		8A05292A29714E8D00E8A939 /* Tav Prasad Savaiye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tav Prasad Savaiye.swift"; sourceTree = "<group>"; };
+		8A05292A29714E8D00E8A939 /* Tav Prasad Savaiye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tav Prasad Savaiye.swift"; sourceTree = "<group>"; };
 		8A05292C29714E9E00E8A939 /* Chaupai Sahib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chaupai Sahib.swift"; sourceTree = "<group>"; };
 		8A05292E29714EAB00E8A939 /* Anand Sahib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anand Sahib.swift"; sourceTree = "<group>"; };
 		8A05293029714EB700E8A939 /* Rehras Sahib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rehras Sahib.swift"; sourceTree = "<group>"; };

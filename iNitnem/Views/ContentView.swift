@@ -16,7 +16,7 @@ let dailyFacts = [dailyFact(assetName: "Maharaja-Ranjit-Singh-Ji", text: "Mahara
 
 struct ContentView: View {
     @State private var showAlert = false
-
+    
     var body: some View {
 
         NavigationView{
@@ -38,7 +38,6 @@ struct ContentView: View {
                         .frame(width: 80, height: 70)
                         .aspectRatio(contentMode: .fit)
                         
-                    
                     NavigationLink(destination: NitnemBaniList()){
                         Text( "Nitnem     ")
                             .fontWeight(.heavy)
@@ -49,8 +48,7 @@ struct ContentView: View {
                             .padding(.top, 20.0)
                             .fontDesign(.serif)
                     }
-                    
-                    
+
                     NavigationLink(destination:ToolMenu()){
 
                         Text("Your Journey")
