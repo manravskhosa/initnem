@@ -1,7 +1,7 @@
 ## License
 This repository does not come with any license. Therefore, all rights are reserved and unauthorized use or distribution of this code is prohibited. If you would like to use or modify this code, please contact me to discuss potential arrangements. Thank you for respecting my work. 
 
-Not all the most recent code is included, given proprietary intellectual property for the code behind the tracking data dashboard!
+**Not all the most recent code is included, given proprietary intellectual property for the code behind the tracking data dashboard!
 
 # iNitnem - All-In-One Lifestyle Application For iOS
 iNitnem is an iOS app developed using Swift through XCode, aimed to provide an all-in-one solution for a meditation companion, Sikh calendar, and history database. This app was created to address a gap in the market for such an application, leveraging business intelligence and fresh creative energy to develop a unique solution with cutting-edge UI/UX.
